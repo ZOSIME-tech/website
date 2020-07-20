@@ -1,12 +1,28 @@
 .footer {
-	margin: 0;
-	padding: 0;
-	
-	&__social {
-		
-		&--icon {
-			height: 3rem;
-			width: 3rem;
-		}
-	}
+  &__social {
+    background-color: $color-secondary-light;
+    fill: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--link {
+      display: inline-block;
+    }
+
+    &--icon {
+      height: 3rem;
+      width: 3rem;
+      margin: 2rem;
+    }
+  }
+
+  &__copyright {
+    background-color: $color-secondary-dark;
+    color: $color-white;
+    text-align: center;
+    font-weight: 600;
+    font-family: 1.7rem;
+    padding: 2rem;
+  }
 }

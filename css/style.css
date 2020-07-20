@@ -20,8 +20,10 @@
 
 .u-image-full-size {
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 *,
@@ -29,7 +31,8 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
@@ -51,7 +54,14 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: #2AB1DB;
+  color: #fff;
+  display: inline-block;
 }
 
 ::selection {
@@ -105,30 +115,57 @@ body {
 }
 
 .masked-text {
+  background: -webkit-gradient(linear, left top, right top, from(#9FD295), color-stop(#82C076), color-stop(#2FC5F3), to(#2AB1DB));
   background: linear-gradient(to right, #9FD295, #82C076, #2FC5F3, #2AB1DB);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.footer {
-  margin: 0;
-  padding: 0;
+.footer__social {
+  background-color: #2FC5F3;
+  fill: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social--link {
+  display: inline-block;
 }
 
 .footer__social--icon {
   height: 3rem;
   width: 3rem;
+  margin: 2rem;
+}
+
+.footer__copyright {
+  background-color: #2AB1DB;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-family: 1.7rem;
+  padding: 2rem;
 }
 
 .hero {
   max-width: 110rem;
   margin: 0 auto;
+  display: -ms-grid;
   display: grid;
   height: 90vh;
   margin: 7rem auto;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   grid-gap: 5rem;
 }
 
@@ -147,9 +184,13 @@ body {
 .nav {
   max-width: 110rem;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 3rem 0;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 75em) {
@@ -172,12 +213,16 @@ body {
 
 .nav__brand-image {
   width: 100%;
-  object-fit: contain;
-  object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .nav__items {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -204,8 +249,11 @@ body {
 }
 
 .pricing__container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
+  -ms-grid-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
+      grid-template-columns: 1fr -webkit-min-content 1fr -webkit-min-content 1fr -webkit-min-content 1fr;
+      grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
   color: white;
 }
 
@@ -217,8 +265,12 @@ body {
 
 .pricing__item {
   margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pricing__item--icon {
@@ -229,7 +281,8 @@ body {
 }
 
 .pricing__item--icon-mod {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .pricing__card {
@@ -247,6 +300,8 @@ body {
 }
 
 .pricing__card--1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2 / 3;
 }
 
@@ -255,6 +310,8 @@ body {
 }
 
 .pricing__card--2 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
   grid-column: 4 / 5;
 }
 
@@ -263,6 +320,8 @@ body {
 }
 
 .pricing__card--3 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 1;
   grid-column: 6 / 7;
 }
 
@@ -284,5 +343,6 @@ body {
   position: absolute;
   left: 50%;
   top: 75%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
