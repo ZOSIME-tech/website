@@ -1,5 +1,6 @@
 .project {
-  padding: 15rem 0;
+  @include setWidth;
+  margin: 10rem auto;
   text-align: center;
 
   &__container {
