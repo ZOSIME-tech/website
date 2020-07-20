@@ -4,11 +4,7 @@ h1 {
 
 h2 {
   font-size: 3.8rem;
-  font-weight: 500;
-
-  span {
-    color: $color-secondary-light;
-  }
+  font-weight: 600;
 }
 
 h3 {
@@ -46,6 +42,15 @@ body {
 .description {
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.section-title {
+  margin-bottom: 7.5rem;
+  text-align: center;
+
+  span {
+    color: $color-secondary-main;
+  }
 }
 
 .masked-text {
