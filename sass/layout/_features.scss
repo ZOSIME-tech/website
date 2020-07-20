@@ -5,7 +5,7 @@
 
   &__topic {
     @include flexCenter;
-    padding: 10rem 0;
+    padding: 5rem 0;
 
     span {
       color: $color-secondary-main;
@@ -13,26 +13,31 @@
   }
 
   &__row {
-    padding: 10rem 0;
+    padding: 3rem 0;
+    @include clearfix;
 
-    &--image-left {
+    &--text-1,
+    &--text-3 {
+      width: 40vw;
+      float: right;
+    }
+
+    &--image-1,
+    &--image-3 {
       width: 40vw;
       float: left;
     }
 
-    &--text-right {
-      width: 50vw;
+    &--image-2,
+    &--image-4 {
+      width: 40vw;
       float: right;
     }
 
-    &--image-right {
+    &--text-2,
+    &--text-4 {
       width: 40vw;
       float: left;
-    }
-
-    &--text-left {
-      width: 50vw;
-      float: right;
     }
   }
 }
