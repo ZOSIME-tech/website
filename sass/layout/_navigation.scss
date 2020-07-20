@@ -31,5 +31,9 @@
   &__link {
     text-decoration: none;
     color: $color-black;
+
+    &:hover {
+      color: $color-secondary-main;
+    }
   }
 }

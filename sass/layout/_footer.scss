@@ -1,6 +1,6 @@
 .footer {
   &__social {
-    background-color: $color-secondary-light;
+    background-color: $color-secondary-dark;
     fill: $color-white;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
   }
 
   &__copyright {
-    background-color: $color-secondary-dark;
+    background-color: $color-secondary-darker;
     color: $color-white;
     text-align: center;
     font-weight: 600;
