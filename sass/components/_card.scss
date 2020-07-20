@@ -1,0 +1,59 @@
+.pricing__card {
+  border-radius: 1rem;
+  overflow: hidden;
+
+  &--content {
+    text-align: center;
+    padding: 1rem 2rem;
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+
+  &--1 {
+    grid-column: 2 / 3;
+
+    & .pricing__card--content {
+      background-color: $color-price-base;
+    }
+  }
+
+  &--2 {
+    grid-column: 4 / 5;
+
+    & .pricing__card--content {
+      background-color: $color-price-pro;
+    }
+  }
+
+  &--3 {
+    grid-column: 6 / 7;
+
+    & .pricing__card--content {
+      background-color: $color-price-premium;
+    }
+  }
+
+  &--banner {
+    position: relative;
+
+    img {
+      width: 25rem;
+      height: 15rem;
+      display: block;
+    }
+
+    h3 {
+      position: absolute;
+      left: 50%;
+      top: 75%;
+      transform: translate(-50%, -50%);
+      font-weight: 500;
+    }
+  }
+}
