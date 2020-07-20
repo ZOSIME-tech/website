@@ -4,7 +4,7 @@
 
   &__topic{
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 10rem;
 
     span{
       color: $color-secondary-light;
@@ -54,7 +54,12 @@
       padding: 1rem 2rem;
 
       p{
-        font-size: 1rem;
+        font-size: 1.1rem;
+        transform: translateX(-1rem);
+      }
+      
+      h3{
+        font-weight: 400;
       }
     }
 
@@ -99,9 +104,38 @@
           left: 50%;
           top: 75%;
           transform: translate(-50%,-50%);
+          font-weight: 500;
 
         }
     }
+
+  }
+
+  &__btn{
+    border: none;
+    padding: 1.5rem 4.5rem;
+    border-radius: 2.5rem;
+    color: inherit;
+    margin: 1rem 0;
+
+    transition: all .3s;
+
+    &--basic{
+      background-color: $color-price-base-btn;
+    }
+
+    &--pro{
+      background-color: $color-price-pro-btn;
+    }
+
+    &--premium{
+      background-color: $color-price-premium-btn;
+    }
+
+    &:hover{
+        background-color: white;
+        color: black;
+      }
 
   }
 
