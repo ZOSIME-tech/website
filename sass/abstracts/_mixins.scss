@@ -11,6 +11,20 @@
   align-items: center;
 }
 
+@mixin setWidth {
+
+  max-width: 110rem;
+  margin: 0 auto;
+
+  @include respond(tab-land) {
+    max-width: 90%;
+  }
+
+  @include respond(tab-port) {
+    max-width: 95%;
+  }
+}
+
 /*
   DARK THEME / LIGHT THEME styling
   $scheme = dark | light

@@ -22,17 +22,6 @@ html {
 
 body {
   box-sizing: border-box;
-
-  max-width: 110rem;
-  margin: 0 auto;
-
-  @include respond(tab-land) {
-    max-width: 95%;
-  }
-
-  @include respond(tab-port) {
-    max-width: 90%;
-  }
 }
 
 ::selection {

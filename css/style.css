@@ -56,20 +56,6 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 110rem;
-  margin: 0 auto;
-}
-
-@media only screen and (max-width: 75em) {
-  body {
-    max-width: 95%;
-  }
-}
-
-@media only screen and (max-width: 56.25em) {
-  body {
-    max-width: 90%;
-  }
 }
 
 ::-moz-selection {
@@ -147,10 +133,12 @@ body {
 }
 
 .hero {
+  max-width: 110rem;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   height: 90vh;
-  margin: 7rem 0;
+  margin: 7rem auto;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
@@ -158,15 +146,40 @@ body {
   grid-gap: 5rem;
 }
 
+@media only screen and (max-width: 75em) {
+  .hero {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .hero {
+    max-width: 95%;
+  }
+}
+
 .nav {
+  max-width: 110rem;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
   padding: 3rem 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 75em) {
+  .nav {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .nav {
+    max-width: 95%;
+  }
 }
 
 .nav__brand {
