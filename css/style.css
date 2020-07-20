@@ -4,17 +4,31 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
   font-family: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 62.5%;
-  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-h1 {
-  color: #9FD295;
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-moz-selection {
+  background-color: #2AB1DB;
+  color: #fff;
+  display: inline-block;
+}
+
+::selection {
+  background-color: #2AB1DB;
+  color: #fff;
+  display: inline-block;
 }
 
 h1 {
@@ -47,12 +61,23 @@ body {
   font-size: 1.8rem;
 }
 
+.masked-text {
+  background: -webkit-gradient(linear, left top, right top, from(#9FD295), color-stop(#82C076), color-stop(#9FD295), to(#2AB1DB));
+  background: linear-gradient(to right, #9FD295, #82C076, #9FD295, #2AB1DB);
+  background-clip: text;
+  color: transparent;
+}
+
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   max-width: 110rem;
   margin: 0 auto;
   padding: 3rem 0;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__brand {
@@ -63,12 +88,16 @@ body {
 
 .nav__brand-image {
   width: 100%;
-  object-fit: contain;
-  object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .nav__items {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -86,8 +115,11 @@ body {
 }
 
 .pricing__container {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
+  -ms-grid-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
+      grid-template-columns: 1fr -webkit-min-content 1fr -webkit-min-content 1fr -webkit-min-content 1fr;
+      grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
   color: orangered;
 }
 
@@ -111,5 +143,7 @@ body {
 }
 
 .pricing__card--1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
   grid-column: 2 / 3;
 }

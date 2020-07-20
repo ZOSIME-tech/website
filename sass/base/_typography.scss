@@ -29,7 +29,7 @@ body {
 }
 
 .masked-text {
-  background: linear-gradient(to right, $color-primary-light, $color-primary-da, $color-primary-light, $color-secondary-dark);
+  background: linear-gradient(to right, $color-primary-light, $color-primary-dark, $color-primary-light, $color-secondary-dark);
   background-clip: text;
 
   color: transparent;
