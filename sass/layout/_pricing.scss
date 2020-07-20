@@ -1,0 +1,44 @@
+.pricing{
+
+  &__detail{
+    list-style: none;
+  }
+ 
+}
+
+.pricing__container{
+
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
+  color: orangered;
+
+}
+
+.pricing__card{
+
+  &--banner{
+    position: relative;
+    img{
+      width: 25rem;
+      height: 15rem;
+    }
+ 
+    h3{
+      position: absolute;
+      bottom: 3px;
+      left: 1rem;
+    }
+
+  }
+
+  &--middle{
+    p{
+      font-size: 1rem;
+    }
+  }
+
+
+  &--1{
+    grid-column: 2 / 3;
+  }
+}

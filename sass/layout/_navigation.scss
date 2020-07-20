@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  align-items: center;
+
+  &__brand {
+    height: 6rem;
+    width: 6rem;
+    margin-right: auto;
+
+    &-image {
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &__items { 
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-black;
+  }
+}
