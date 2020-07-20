@@ -1,0 +1,19 @@
+.feature {
+  margin: 0 auto;
+  padding: 2rem;
+
+  &__topic {
+    @include flexCenter;
+
+    span {
+      color: $color-secondary-main;
+    }
+  }
+
+  &__row {
+    &--image {
+      width: 50vw;
+      height: auto;
+    }
+  }
+}
