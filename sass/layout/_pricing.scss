@@ -31,7 +31,10 @@
 
   }
 
-  &--middle{
+  &--content{
+    
+    background-color: $color-price-base; 
+
     p{
       font-size: 1rem;
     }

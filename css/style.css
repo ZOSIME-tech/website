@@ -47,6 +47,12 @@ body {
   font-size: 1.8rem;
 }
 
+.masked-text {
+  background: linear-gradient(to right, #9FD295, #82C076, #9FD295, #2AB1DB);
+  background-clip: text;
+  color: transparent;
+}
+
 .nav {
   display: flex;
   max-width: 110rem;
@@ -106,7 +112,11 @@ body {
   left: 1rem;
 }
 
-.pricing__card--middle p {
+.pricing__card--content {
+  background-color: #148786;
+}
+
+.pricing__card--content p {
   font-size: 1rem;
 }
 
