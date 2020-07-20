@@ -233,7 +233,8 @@ body {
 }
 
 .pricing__card {
-  border-radius: 15px;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .pricing__card--content {

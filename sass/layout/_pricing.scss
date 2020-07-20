@@ -46,7 +46,8 @@
 
   &__card{
 
-    border-radius: 15px;
+    border-radius: 1rem;
+    overflow: hidden;
 
     &--content{
       text-align: center;
@@ -86,6 +87,7 @@
 
     &--banner{
         position: relative;
+        
         img{
           width: 25rem;
           height: 15rem;
