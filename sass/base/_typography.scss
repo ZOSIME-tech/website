@@ -4,13 +4,11 @@ h1 {
 
 h2 {
   font-size: 3.8rem;
-  text-align: center;
   font-weight: 500;
 
-  span{
-      color: $color-secondary-light;
+  span {
+    color: $color-secondary-light;
   }
-
 }
 
 h3 {
@@ -40,6 +38,7 @@ body {
 }
 
 .heading-secondary {
+  font-size: 3.4rem;
   font-weight: 300;
   margin-bottom: 2rem;
 }
