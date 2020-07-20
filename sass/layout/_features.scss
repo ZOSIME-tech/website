@@ -1,9 +1,11 @@
 .feature {
   margin: 0 auto;
   padding: 2rem;
+  display: inline-block;
 
   &__topic {
     @include flexCenter;
+    padding: 10rem 0;
 
     span {
       color: $color-secondary-main;
@@ -11,9 +13,26 @@
   }
 
   &__row {
-    &--image {
+    padding: 10rem 0;
+
+    &--image-left {
+      width: 40vw;
+      float: left;
+    }
+
+    &--text-right {
       width: 50vw;
-      height: auto;
+      float: right;
+    }
+
+    &--image-right {
+      width: 40vw;
+      float: left;
+    }
+
+    &--text-left {
+      width: 50vw;
+      float: right;
     }
   }
 }

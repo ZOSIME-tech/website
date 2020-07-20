@@ -1,109 +1,98 @@
-.pricing{
-
+.pricing {
   padding: 15rem 0;
   text-align: center;
 
-
-  &__container{
+  &__container {
     display: grid;
     grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
     color: white;
-  } 
-
-  &__detail{
-    list-style: none;
-    text-align: left;
-    font-size:  1.5rem; 
   }
 
-  &__item{
-    margin: 1rem 0; 
+  &__detail {
+    list-style: none;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  &__item {
+    margin: 1rem 0;
     display: flex;
     align-items: center;
 
-
-    &--icon{
+    &--icon {
       height: 2rem;
       width: 2rem;
       margin-right: 1rem;
       fill: $color-white;
 
-      &-mod{
+      &-mod {
         transform: rotate(45deg);
       }
-
     }
-
   }
 
-  &__card{
-
-    border-radius: 1rem; 
+  &__card {
+    border-radius: 1rem;
     overflow: hidden;
 
-    &--content{
+    &--content {
       text-align: center;
       padding: 1rem 2rem;
 
-      p{
+      p {
         font-size: 1.1rem;
         transform: translateX(-1rem);
       }
-      
-      h3{
+
+      h3 {
         font-weight: 400;
       }
     }
 
-    &--1{
+    &--1 {
       grid-column: 2 / 3;
 
-      &  .pricing__card--content{
+      & .pricing__card--content {
         background-color: $color-price-base;
       }
-
     }
 
-    &--2{
+    &--2 {
       grid-column: 4 / 5;
 
-      &  .pricing__card--content{
+      & .pricing__card--content {
         background-color: $color-price-pro;
       }
-
     }
 
-    &--3{
+    &--3 {
       grid-column: 6 / 7;
 
-      &  .pricing__card--content{
+      & .pricing__card--content {
         background-color: $color-price-premium;
       }
-
     }
 
-    &--banner{
-        position: relative;
-        
-        img{
-          width: 25rem;
-          height: 15rem;
-          display: block;
-        }
-    
-        h3{
-          position: absolute;
-          left: 50%;
-          top: 75%;
-          transform: translate(-50%,-50%);
-          font-weight: 500;
+    &--banner {
+      position: relative;
 
-        }
+      img {
+        width: 25rem;
+        height: 15rem;
+        display: block;
+      }
+
+      h3 {
+        position: absolute;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+        font-weight: 500;
+      }
     }
-
   }
 
-  &__btn{
+  &__btn {
     border: none;
     padding: 1.5rem 4.5rem;
     border-radius: 2.5rem;
@@ -113,27 +102,24 @@
     outline: none;
     font-size: 1.5rem;
 
-    transition: all .5s;
+    transition: all 0.5s;
 
-    &--basic{
+    &--basic {
       background-color: $color-price-base-btn;
     }
 
-    &--pro{
+    &--pro {
       background-color: $color-price-pro-btn;
     }
 
-    &--premium{
+    &--premium {
       background-color: $color-price-premium-btn;
     }
 
-    &:hover{
-        background-color: white;
-        color: black;
-        cursor: pointer;
-      }
-
+    &:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
   }
-
-  
 }
