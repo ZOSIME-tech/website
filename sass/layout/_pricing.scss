@@ -1,16 +1,8 @@
 .pricing{
 
-  padding: 4.5rem 0;
+  padding: 15rem 0;
+  text-align: center;
 
-  &__topic{
-    text-align: center;
-    margin-bottom: 10rem;
-
-    span{
-      color: $color-secondary-light;
-    }
-
-  }
 
   &__container{
     display: grid;
@@ -116,9 +108,12 @@
     padding: 1.5rem 4.5rem;
     border-radius: 2.5rem;
     color: inherit;
+    font: inherit;
     margin: 1rem 0;
+    outline: none;
+    font-size: 1.5rem;
 
-    transition: all .3s;
+    transition: all .5s;
 
     &--basic{
       background-color: $color-price-base-btn;
@@ -135,6 +130,7 @@
     &:hover{
         background-color: white;
         color: black;
+        cursor: pointer;
       }
 
   }

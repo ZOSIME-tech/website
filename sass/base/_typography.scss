@@ -4,6 +4,13 @@ h1 {
 
 h2 {
   font-size: 3.8rem;
+  text-align: center;
+  font-weight: 500;
+
+  span{
+      color: $color-secondary-light;
+  }
+
 }
 
 h3 {
