@@ -13,11 +13,11 @@
     width: 35rem;
 
     img {
-      width: 95%;
+      width: 100%;
       transition: all .3s;
 
       &:hover {
-        width: 100%;
+        transform: translateY(-1rem) scale(1.05);
       }
     }
 
