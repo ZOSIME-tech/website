@@ -1,3 +1,8 @@
 .hero {
-  display: flex;
+  display: grid;
+  height: 90vh;
+  margin: 7rem 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5rem;
 }
