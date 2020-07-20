@@ -13,7 +13,12 @@
     width: 35rem;
 
     img {
-      width: 100%;
+      width: 95%;
+      transition: all .3s;
+
+      &:hover {
+        width: 100%;
+      }
     }
 
     &--1 {
