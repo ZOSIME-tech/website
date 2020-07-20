@@ -23,12 +23,7 @@
 *::after {
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
   box-sizing: inherit;
-=======
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
->>>>>>> db1b70b966f7b3897d7b6c9b18bc18ca84b38ca8
 }
 
 html {
@@ -50,11 +45,7 @@ html {
 }
 
 body {
-<<<<<<< HEAD
   box-sizing: border-box;
-=======
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   max-width: 110rem;
   margin: 0 auto;
 }
@@ -69,7 +60,6 @@ body {
   body {
     max-width: 90%;
   }
->>>>>>> db1b70b966f7b3897d7b6c9b18bc18ca84b38ca8
 }
 
 ::selection {
@@ -109,14 +99,6 @@ body {
 }
 
 .masked-text {
-<<<<<<< HEAD
-  background: linear-gradient(to right, #9FD295, #82C076, #9FD295, #2AB1DB);
-  background-clip: text;
-  color: transparent;
-}
-
-=======
-  background: -webkit-gradient(linear, left top, right top, from(#9FD295), color-stop(#82C076), color-stop(#2FC5F3), to(#2AB1DB));
   background: linear-gradient(to right, #9FD295, #82C076, #2FC5F3, #2AB1DB);
   background-clip: text;
   -webkit-background-clip: text;
@@ -133,18 +115,11 @@ body {
   width: 3rem;
 }
 
->>>>>>> db1b70b966f7b3897d7b6c9b18bc18ca84b38ca8
 .nav {
   display: flex;
   margin: 0 auto;
   padding: 3rem 0;
-<<<<<<< HEAD
   align-items: center;
-=======
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> db1b70b966f7b3897d7b6c9b18bc18ca84b38ca8
 }
 
 .nav__brand {
@@ -155,15 +130,8 @@ body {
 
 .nav__brand-image {
   width: 100%;
-<<<<<<< HEAD
   object-fit: contain;
   object-position: center;
-=======
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
->>>>>>> db1b70b966f7b3897d7b6c9b18bc18ca84b38ca8
 }
 
 .nav__items {
@@ -195,15 +163,8 @@ body {
 
 .pricing__container {
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
   color: white;
-=======
-  -ms-grid-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
-      grid-template-columns: 1fr -webkit-min-content 1fr -webkit-min-content 1fr -webkit-min-content 1fr;
-      grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
-  color: orangered;
->>>>>>> db1b70b966f7b3897d7b6c9b18bc18ca84b38ca8
 }
 
 .pricing__detail {
@@ -214,6 +175,19 @@ body {
 
 .pricing__item {
   margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.pricing__item--icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  fill: #fff;
+}
+
+.pricing__item--icon-mod {
+  transform: rotate(45deg);
 }
 
 .pricing__card {

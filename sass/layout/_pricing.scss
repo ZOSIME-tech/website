@@ -21,11 +21,27 @@
   &__detail{
     list-style: none;
     text-align: left;
-    font-size:  1.5rem;
+    font-size:  1.5rem; 
   }
 
   &__item{
     margin: 1rem 0;
+    display: flex;
+    align-items: center;
+
+
+    &--icon{
+      height: 2rem;
+      width: 2rem;
+      margin-right: 1rem;
+      fill: $color-white;
+
+      &-mod{
+        transform: rotate(45deg);
+      }
+
+    }
+
   }
 
   &__card{
