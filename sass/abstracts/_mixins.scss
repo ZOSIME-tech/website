@@ -12,7 +12,6 @@
 }
 
 @mixin setWidth {
-
   max-width: 110rem;
   margin: 0 auto;
 
@@ -50,41 +49,35 @@
  */
 
 @mixin respond($breakpoint) {
-
-  @if($breakpoint==phone) {
+  @if ($breakpoint==phone) {
     @media only screen and (max-width: 37.5em) {
       //600px = 37.5em (1em = 16px)
       @content;
     }
   }
 
-  @if($breakpoint==tab-port) {
-
+  @if ($breakpoint==tab-port) {
     @media only screen and (max-width: 56.25em) {
       //900px = 56.25em (1em = 16px)
       @content;
     }
   }
 
-  @if($breakpoint==tab-port-touch) {
-
-    @media only screen and (max-width: 56.25em),
-    only screen and (hover: none) {
+  @if ($breakpoint==tab-port-touch) {
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       //900px = 56.25em (1em = 16px)
       @content;
     }
   }
 
-  @if($breakpoint==tab-land) {
-
+  @if ($breakpoint==tab-land) {
     @media only screen and (max-width: 75em) {
       //1200px = 75em (1em = 16px)
       @content;
     }
   }
 
-  @if($breakpoint==huge) {
-
+  @if ($breakpoint==huge) {
     @media only screen and (min-width: 112.5em) {
       //1800px = 112.5em (1em = 16px)
       @content;

@@ -1,28 +1,26 @@
 .footer {
   &__social {
-    background-color: $color-secondary-dark;
-    fill: $color-white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: $color-secondary-main;
+    @include flexCenter;
 
     &--link {
       display: inline-block;
+      fill: $color-white;
     }
 
     &--icon {
-      height: 3rem;
-      width: 3rem;
+      height: 2.5rem;
+      width: 2.5rem;
       margin: 2rem;
     }
   }
 
   &__copyright {
-    background-color: $color-secondary-darker;
+    background-color: $color-secondary-dark;
     color: $color-white;
     text-align: center;
     font-weight: 600;
-    font-family: 1.7rem;
+    font-size: 1.7rem;
     padding: 2rem;
   }
 }
