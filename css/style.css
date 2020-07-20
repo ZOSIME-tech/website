@@ -1,11 +1,30 @@
 /* COLORS */
+/*
+  DARK THEME / LIGHT THEME styling
+  $scheme = dark | light
+*/
+/* MEDIA QUERY MANAGER
+ *
+ * 0 - 600px => phone
+ * 600px - 900px => tablet portrait
+ * 900px - 1200px => tablet landscape
+ * 1200px+ => desktop
+ */
+/*
+ * CHOICES:
+ * phone, tab-port, tab-lan, desk
+ */
+.u-upper {
+  text-transform: uppercase;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
@@ -14,9 +33,35 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 75em) {
+  body {
+    max-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  body {
+    max-width: 90%;
+  }
 }
 
 ::-moz-selection {
@@ -61,16 +106,23 @@ body {
   font-size: 1.8rem;
 }
 
+.masked-text {
+  background: -webkit-gradient(linear, left top, right top, from(#9FD295), color-stop(#82C076), color-stop(#2FC5F3), to(#2AB1DB));
+  background: linear-gradient(to right, #9FD295, #82C076, #2FC5F3, #2AB1DB);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 110rem;
   margin: 0 auto;
   padding: 3rem 0;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav__brand {
@@ -82,9 +134,9 @@ body {
 .nav__brand-image {
   width: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
 }
 
 .nav__items {
@@ -111,8 +163,8 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
-  grid-template-columns: 1fr -webkit-min-content 1fr -webkit-min-content 1fr -webkit-min-content 1fr;
-  grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
+      grid-template-columns: 1fr -webkit-min-content 1fr -webkit-min-content 1fr -webkit-min-content 1fr;
+      grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
   color: orangered;
 }
 
