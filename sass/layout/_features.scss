@@ -1,64 +1,66 @@
 .feature {
 
-  padding: 5rem;
+  @include setWidth;
 
-  &__container{
+  &__container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     justify-items: center;
-    row-gap: 2rem;
+    align-items: center;
+    gap: 4rem;
   }
 
-  &__image{
-    width: 60%;
+  &__image {
+    height: 80%;
     display: block;
 
-    &--1{
+    &--1 {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
 
-    &--2{
+    &--2 {
       grid-column: 2 / 3;
       grid-row: 2 / 3;
     }
 
-    &--3{
+    &--3 {
       grid-column: 1 / 2;
       grid-row: 3 / 4;
       height: auto;
     }
 
-    &--4{
+    &--4 {
       grid-column: 2 / 3;
       grid-row: 4 / 5;
     }
 
   }
 
-  &__text{
-    &--1{
+  &__text {
+    &--1 {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       text-align: left;
       align-self: center;
     }
 
-    &--2{
+    &--2 {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
       text-align: right;
       align-self: center;
     }
 
-    &--3{
+    &--3 {
       grid-column: 2 / 3;
       grid-row: 3 / 4;
       text-align: left;
       align-self: center;
     }
 
-    &--4{
+    &--4 {
       grid-column: 1 / 2;
       grid-row: 4 / 5;
       text-align: right;
