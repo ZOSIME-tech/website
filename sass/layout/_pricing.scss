@@ -1,47 +1,107 @@
 .pricing{
 
+  padding: 4.5rem 0;
+
+  &__topic{
+    text-align: center;
+    margin-bottom: 3.5rem;
+
+    span{
+      color: $color-secondary-light;
+    }
+
+  }
+
+  &__container{
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
+    color: white;
+  } 
+
   &__detail{
     list-style: none;
+    text-align: left;
+    font-size:  1.5rem; 
   }
- 
-}
 
-.pricing__container{
+  &__item{
+    margin: 1rem 0; 
+    display: flex;
+    align-items: center;
 
-  display: grid;
-  grid-template-columns: 1fr min-content 1fr min-content 1fr min-content 1fr;
-  color: orangered;
 
-}
+    &--icon{
+      height: 2rem;
+      width: 2rem;
+      margin-right: 1rem;
+      fill: $color-white;
 
-.pricing__card{
+      &-mod{
+        transform: rotate(45deg);
+      }
 
-  &--banner{
-    position: relative;
-    img{
-      width: 25rem;
-      height: 15rem;
-    }
- 
-    h3{
-      position: absolute;
-      bottom: 3px;
-      left: 1rem;
     }
 
   }
 
-  &--content{
+  &__card{
+
+    border-radius: 15px;
+
+    &--content{
+      text-align: center;
+      padding: 1rem 2rem;
+
+      p{
+        font-size: 1rem;
+      }
+    }
+
+    &--1{
+      grid-column: 2 / 3;
+
+      &  .pricing__card--content{
+        background-color: $color-price-base;
+      }
+
+    }
+
+    &--2{
+      grid-column: 4 / 5;
+
+      &  .pricing__card--content{
+        background-color: $color-price-pro;
+      }
+
+    }
+
+    &--3{
+      grid-column: 6 / 7;
+
+      &  .pricing__card--content{
+        background-color: $color-price-premium;
+      }
+
+    }
+
+    &--banner{
+        position: relative;
+        img{
+          width: 25rem;
+          height: 15rem;
+          display: block;
+        }
     
-    background-color: $color-price-base; 
+        h3{
+          position: absolute;
+          left: 50%;
+          top: 75%;
+          transform: translate(-50%,-50%);
 
-    p{
-      font-size: 1rem;
+        }
     }
+
   }
 
-
-  &--1{
-    grid-column: 2 / 3;
-  }
+  
 }
