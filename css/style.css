@@ -122,14 +122,37 @@ body {
   color: transparent;
 }
 
-.footer {
-  margin: 0;
-  padding: 0;
+.footer__social {
+  background-color: #2FC5F3;
+  fill: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social--link {
+  display: inline-block;
 }
 
 .footer__social--icon {
   height: 3rem;
   width: 3rem;
+  margin: 2rem;
+}
+
+.footer__copyright {
+  background-color: #2AB1DB;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-family: 1.7rem;
+  padding: 2rem;
 }
 
 .hero {
