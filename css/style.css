@@ -20,10 +20,8 @@
 
 .u-image-full-size {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 *,
@@ -53,26 +51,7 @@ html {
 }
 
 body {
-<<<<<<< HEAD
   box-sizing: border-box;
-  max-width: 110rem;
-  margin: 0 auto;
-}
-
-@media only screen and (max-width: 75em) {
-  body {
-    max-width: 95%;
-  }
-}
-
-@media only screen and (max-width: 56.25em) {
-  body {
-    max-width: 90%;
-  }
-=======
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
->>>>>>> aa2431814b5fa288d19c7fd601c53f45be0f89d1
 }
 
 ::selection {
@@ -145,14 +124,11 @@ body {
 .hero {
   max-width: 110rem;
   margin: 0 auto;
-  display: -ms-grid;
   display: grid;
   height: 90vh;
   margin: 7rem auto;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-gap: 5rem;
 }
 
@@ -169,13 +145,8 @@ body {
 }
 
 .nav {
-<<<<<<< HEAD
-=======
   max-width: 110rem;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> aa2431814b5fa288d19c7fd601c53f45be0f89d1
   display: flex;
   padding: 3rem 0;
   align-items: center;
