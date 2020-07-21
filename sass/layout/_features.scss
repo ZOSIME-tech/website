@@ -1,7 +1,5 @@
 .feature {
-
   @include setWidth;
-  margin: 10rem auto;
 
   &__container {
     display: grid;

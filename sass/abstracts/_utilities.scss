@@ -8,10 +8,15 @@
   object-position: center;
 }
 
-.mb-large {
-  margin-bottom: 7.5rem;
+.u-mb-large {
+  margin-bottom: 7.5rem !important;
 }
 
 .u-iblock {
   display: inline-block;
+}
+
+.u-margin-tb-xl {
+  margin-top: 20rem !important;
+  margin-bottom: 20rem !important;
 }
