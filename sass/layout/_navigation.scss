@@ -38,3 +38,13 @@
     }
   }
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $color-white;
+  z-index: 1000;
+  box-shadow: 0 2px 2px $color-gray-4;
+}

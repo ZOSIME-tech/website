@@ -17,24 +17,26 @@
 
 <body>
   <header>
-    <nav class="nav">
-      <div class="nav__brand">
-        <img src="img/logo/logo-colored-filled.png" alt=" Zosime" class="nav__brand-image" />
+    <nav>
+      <div class="nav">
+        <div class="nav__brand sticky__brand">
+          <img src="img/logo/logo-colored-filled.png" alt="Zosime" class="nav__brand-image" />
+        </div>
+        <ul class="nav__items sticky__items">
+          <li class="nav__item sticky__item">
+            <a href="#" class="nav__link sticky__link">Blog</a>
+          </li>
+          <li class="nav__item sticky__item">
+            <a href="#pricing" class="nav__link sticky__link">Pricing</a>
+          </li>
+          <li class="nav__item sticky__item">
+            <a href="#about" class="nav__link sticky__link">About us</a>
+          </li>
+          <li class="nav__item sticky__item">
+            <a href="#contact" class="nav__link sticky__link">Contact us</a>
+          </li>
+        </ul>
       </div>
-      <ul class="nav__items">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Blog</a>
-        </li>
-        <li class="nav__item">
-          <a href="#pricing" class="nav__link">Pricing</a>
-        </li>
-        <li class="nav__item">
-          <a href="#about" class="nav__link">About us</a>
-        </li>
-        <li class="nav__item">
-          <a href="#contact" class="nav__link">Contact us</a>
-        </li>
-      </ul>
     </nav>
   </header>
   <main>
@@ -69,7 +71,7 @@
           <a href="#" class="u-iblock"><img src="img/project-3.png" alt="Project-3" /></a>
         </div>
         <div class="project__card project__card--4">
-          <a href="#" class="u-iblock"><img src="img/project-4.png" alt="Project-4" /></a>
+          <a href="#" class="u-iblock"><img src="img/project-3.png" alt="Project-4" /></a>
         </div>
       </div>
       <button class="btn">Show more</button>
@@ -125,7 +127,7 @@
             by Zosime techies, your company is well set to go on the world of internet!
           </p>
         </div>
-    </section>
+      </section>
 
     <section class="pricing u-margin-tb-xl">
       <h2 class="section-title u-mb-large">
@@ -306,6 +308,11 @@
       <p class="copyright">&copy; Copyright 2020. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
