@@ -26,10 +26,6 @@
   @include respond(tab-land) {
     max-width: 90%;
   }
-
-  @include respond(tab-port) {
-    max-width: 95%;
-  }
 }
 
 /*
@@ -72,7 +68,9 @@
   }
 
   @if ($breakpoint==tab-port-touch) {
-    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+
+    @media only screen and (max-width: 56.25em),
+    only screen and (hover: none) {
       //900px = 56.25em (1em = 16px)
       @content;
     }

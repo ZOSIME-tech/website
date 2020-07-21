@@ -6,6 +6,7 @@
   align-items: center;
 
   &__brand {
+    flex-shrink: 0;
     height: 4rem;
     width: 4rem;
     margin-right: auto;

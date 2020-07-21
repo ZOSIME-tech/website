@@ -3,7 +3,17 @@
 
   display: grid;
   margin: 7% auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-gap: 5rem;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, max-content);
+
+    &__illustration {
+      max-width: 80%;
+      margin: auto auto;
+    }
+  }
 }
