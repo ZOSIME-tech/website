@@ -126,7 +126,7 @@
     &::before,
     &::after {
       height: 2px;
-      background-color: $color-white;
+      background-color: $color-primary-dark;
       display: inline-block;
     }
 
@@ -148,7 +148,7 @@
     }
 
     &--toggle {
-      background-color: transparent;
+      background-color: transparent !important;
 
       &::before {
         top: 0;
@@ -161,4 +161,14 @@
       }
     }
   }
+}
+
+
+.white-bg-bar{
+    &,
+    &::before,
+    &::after {
+      background-color: $color-white !important;
+    }
+
 }
