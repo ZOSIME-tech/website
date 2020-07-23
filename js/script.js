@@ -8,7 +8,7 @@ $(document).ready(function () {
       }
     },
     {
-      offset: "-4%",
+      offset: "-1%",
     }
   );
 });
