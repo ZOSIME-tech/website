@@ -1,9 +1,23 @@
-.nav {
-  @include setWidth;
+header {
+  position: relative;
+}
 
-  display: flex;
-  padding: 3rem 0;
-  align-items: center;
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  &-container {
+    @include setWidth;
+    padding: 3rem 0;
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    z-index: 9999;
+    transition: padding 0.3s;
+  }
 
   &__brand {
     flex-shrink: 0;
