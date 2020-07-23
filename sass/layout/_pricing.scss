@@ -131,6 +131,7 @@
 
   @include respond(phone){
     flex-direction: column;
+    background-image: linear-gradient(to right,$color-white,$color-primary-light);
   }
 
   &--top{
