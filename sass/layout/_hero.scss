@@ -11,7 +11,7 @@
     grid-template-rows: max-content;
     grid-gap: 5rem;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, max-content);
 
