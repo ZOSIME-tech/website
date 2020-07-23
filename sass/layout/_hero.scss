@@ -2,7 +2,7 @@
   @include setWidth;
 
   display: grid;
-  margin: 7% auto;
+  margin: 12rem auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-gap: 5rem;

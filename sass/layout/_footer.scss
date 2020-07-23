@@ -1,11 +1,15 @@
 .footer {
   &__social {
-    background-color: $color-secondary-main;
+    background-color: rgba($color-gray-6, 0.5);
     @include flexCenter;
 
     &--link {
       display: inline-block;
       fill: $color-white;
+
+      &:hover {
+        fill: $color-black;
+      }
     }
 
     &--icon {
@@ -16,7 +20,7 @@
   }
 
   &__copyright {
-    background-color: $color-secondary-dark;
+    background-color: rgba($color-gray-6, 0.6);
     color: $color-white;
     text-align: center;
     font-weight: 600;
