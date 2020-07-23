@@ -5,9 +5,14 @@
   width: 100%;
   z-index: 9999;
 
+  &,
+  &>* {
+    transition: all 0.3s ease;
+  }
+
   &-container {
     @include setWidth;
-    padding: 1.5rem 0;
+    padding: 3rem 0;
     display: flex;
     font-size: 1.8rem;
     align-items: center;
@@ -82,10 +87,24 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: $color-white;
+  background: linear-gradient(to right, $color-primary-light, $color-primary-dark, $color-secondary-light, $color-secondary-main);
+
   z-index: 1000;
-  box-shadow: 0 0.2rem 0.8rem rgba($color-gray-6, 0.7);
-  transition: all 0.2s;
+  box-shadow: 0 3px .6rem rgba($color-black, 0.2);
+  transition: all 0.3s ease-out;
+
+  &>.nav-container {
+    padding: 2rem 0;
+  }
+
+  .nav__link {
+    color: $color-white;
+
+    &:hover {
+      color: $color-black;
+      font-weight: 500;
+    }
+  }
 }
 
 //Hamburger

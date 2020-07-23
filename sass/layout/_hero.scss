@@ -1,19 +1,24 @@
 .hero {
   @include setWidth;
 
-  display: grid;
-  margin: 12rem auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-gap: 5rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 
-  @include respond(tab-port) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, max-content);
+  &-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+    grid-gap: 5rem;
 
-    &__illustration {
-      max-width: 80%;
-      margin: auto auto;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, max-content);
+
+      &__illustration {
+        max-width: 80%;
+        margin: auto;
+      }
     }
   }
 }
