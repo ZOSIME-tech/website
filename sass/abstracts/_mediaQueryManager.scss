@@ -22,7 +22,25 @@
    * phone, tab-port, tab-lan, desk
    */
 
+   
 @mixin respond($breakpoint) {
+
+  @if ($breakpoint==micro) {
+    @media only screen and (max-width: 25em) {
+      // 400px
+      @content;
+    }
+  }
+
+
+@if ($breakpoint==tiny) {
+    @media only screen and (max-width: 31.25em) {
+      // 500px
+      @content;
+    }
+  }
+
+
   @if ($breakpoint==phone) {
     @media only screen and (max-width: 37.5em) {
       //600px = 37.5em (1em = 16px)
@@ -51,7 +69,7 @@
     }
   }
 
-  @if ($breakpoint==huge) {
+    @if ($breakpoint==huge) {
     @media only screen and (min-width: 112.5em) {
       //1800px = 112.5em (1em = 16px)
       @content;
