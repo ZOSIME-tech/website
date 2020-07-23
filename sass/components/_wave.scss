@@ -1,0 +1,12 @@
+.wave {
+  max-height: 50%;
+  width: 100%;
+  // position: absolute;
+  // top: 100vh;
+  transform: translateY(-20%);
+
+  &__image {
+    width: 100%;
+    object-fit: contain;
+  }
+}
