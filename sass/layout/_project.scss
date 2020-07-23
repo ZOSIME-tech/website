@@ -15,11 +15,10 @@
   }
 
   &__card {
-
     img {
       width: 100%;
       object-fit: fill;
-      transition: all .3s;
+      transition: all 0.3s;
 
       &:hover {
         transform: translateY(-1rem) scale(1.05);
