@@ -74,6 +74,12 @@
         grid-row: 4 / 5;
         width: 6rem;
         height: 6rem;
+
+        @include respond(tiny){
+          width: 3rem;
+          height: 3rem;
+        }
+
       }
     }
   }
@@ -93,6 +99,14 @@
     border-radius: 100px;
     margin-right: -2rem;
     border: 3px solid $color-white;
+
+
+    @include respond(tiny){
+        width: 3rem;
+        height: 3rem;
+        margin-right: -1rem;
+    }
+
   }
 
 }
