@@ -110,17 +110,16 @@
 }
 
 .custom {
+
   &__link:link,
   &__link:visited {
     text-decoration: none;
   }
 
-  background-image: linear-gradient(
-    to right,
+  background-image: linear-gradient(to right,
     $color-white,
     $color-primary-light,
-    $color-secondary-light
-  );
+    $color-secondary-light);
   margin-top: 4rem;
   padding: 1rem;
 
@@ -174,5 +173,9 @@
       text-align: center;
       color: $color-black;
     }
+  }
+
+  &__link {
+    color: inherit;
   }
 }
