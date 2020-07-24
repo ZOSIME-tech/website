@@ -70,6 +70,7 @@
 
     &:hover {
       color: $color-secondary-main;
+      font-weight: 500;
     }
   }
 
@@ -98,12 +99,19 @@
   }
 
   .nav__link {
-    color: $color-white;
+    color: $color-black;
+
 
     &:hover {
-      color: $color-black;
+      color: $color-white;
       font-weight: 500;
+
+      @include respond(tiny){
+        color: $color-secondary-main;
+      }
+
     }
+    
   }
 }
 
