@@ -107,7 +107,7 @@
   }
 }
 
-.design__section {
+.custom {
   background-image: linear-gradient(to right,
       $color-white,
       $color-primary-light,
@@ -124,9 +124,8 @@
 
   @include respond(phone) {
     flex-direction: column;
-    background-image: linear-gradient(to right,
-        $color-white,
-        $color-primary-light);
+    background-image: none;
+    background-color: $color-secondary-light;
   }
 
   &--top {
@@ -134,8 +133,8 @@
     flex-basis: 40rem;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
     @include respond(phone) {
       flex-basis: 100%;
@@ -149,6 +148,11 @@
     height: 10rem;
   }
 
+  &--text {
+    margin-left: 2rem;
+    text-align: left;
+  }
+
   &--price {
     margin-right: 1rem;
     text-align: right;
@@ -159,8 +163,7 @@
     }
 
     @include respond(phone) {
-      text-align: center;
-      color: $color-black;
+      text-align: center;color: $color-black;
     }
   }
 }
