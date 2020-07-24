@@ -1,4 +1,5 @@
 .popup {
+
   &-pro,
   &-premium,
   &-special {
@@ -33,11 +34,16 @@
 
   &__content {
     @include absCenter;
+    position: relative;
     width: 60%;
     height: 45rem;
     color: $color-gray-3;
     border-radius: 0.5rem;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
 
     &--pro {
       background-color: $color-price-base;
@@ -53,9 +59,26 @@
     }
   }
 
+  &__title {
+    font-size: 20rem;
+    position: absolute;
+    right: -5%;
+    top: 60%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    color: rgba($color-white, .1);
+  }
+
+
   &__details,
   &__terms {
     margin: 3rem 5rem;
+    font-size: 1.3rem;
+  }
+
+  &__list {
+    font-size: 1.6rem;
+    margin-left: 2rem;
   }
 
   &__item {
