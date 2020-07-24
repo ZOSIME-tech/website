@@ -5,18 +5,19 @@
     justify-content: center;
     grid-gap: 1rem;
     margin-bottom: 8rem;
+    // animation: rotate 5s infinite;
 
-    @include respond(tiny){
-        grid-gap: .5rem;
-      }
+    @include respond(tiny) {
+      grid-gap: .5rem;
+    }
 
 
     &--photo {
-      width: 6rem; 
+      width: 6rem;
       height: 6rem;
       border-radius: 100px;
 
-      @include respond(tiny){
+      @include respond(tiny) {
         width: 3rem;
         height: 3rem;
       }
@@ -75,16 +76,13 @@
         width: 6rem;
         height: 6rem;
 
-        @include respond(tiny){
+        @include respond(tiny) {
           width: 3rem;
           height: 3rem;
         }
-
       }
     }
   }
-
-
 }
 
 .community {
@@ -100,13 +98,10 @@
     margin-right: -2rem;
     border: 3px solid $color-white;
 
-
-    @include respond(tiny){
-        width: 3rem;
-        height: 3rem;
-        margin-right: -1rem;
+    @include respond(tiny) {
+      width: 3rem;
+      height: 3rem;
+      margin-right: -1rem;
     }
-
   }
-
 }
