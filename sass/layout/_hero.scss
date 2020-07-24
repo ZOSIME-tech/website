@@ -14,6 +14,7 @@
     @include respond(phone) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, max-content);
+      margin-top: 10rem;
 
       &__illustration {
         max-width: 80%;

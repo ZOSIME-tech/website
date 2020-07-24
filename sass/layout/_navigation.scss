@@ -42,13 +42,13 @@
       right: 0;
       max-height: 0;
       width: 100%;
-      top: 6rem;
+      top: 7.5rem;
       background-color: $color-white;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       transform: translateY(-150%);
-      padding: 0.5rem 2.5rem;
+      padding: 1rem 2.5rem;
       opacity: 0;
       transition: all 0.3s;
     }
@@ -60,7 +60,7 @@
     }
 
     @include respond(tiny) {
-      padding: 0.2rem 0;
+      margin: 0.5rem 0;
     }
   }
 
