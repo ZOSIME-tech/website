@@ -16,20 +16,30 @@
   }
 
   &__close {
+    color: $color-secondary-light;
     position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
+    top: 3rem;
+    right: 4rem;
     text-decoration: none;
     display: inline-block;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   &__content {
     @include absCenter;
-    width: 75%;
+    width: 50%;
     height: 50rem;
     background-color: $color-white;
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+  }
+
+  &__details,
+  &__terms {
+    margin: 5rem 5rem;
+  }
+
+  &__item {
+    margin: 1rem auto;
   }
 }
