@@ -129,7 +129,6 @@
   }
 
   &--top {
-
     flex-basis: 40rem;
 
     display: flex;
@@ -163,7 +162,8 @@
     }
 
     @include respond(phone) {
-      text-align: center;color: $color-black;
+      text-align: center;
+      color: $color-black;
     }
   }
 }
