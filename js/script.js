@@ -4,9 +4,11 @@ $(document).ready(function () {
       if (direction == "down") {
         $("nav").addClass("sticky");
         $(".burger__line").addClass("white-bg-bar");
+        document.querySelector(".nav__brand-image").src = "img/logo/logo-white.png";
       } else {
         $("nav").removeClass("sticky");
         $(".burger__line").removeClass("white-bg-bar");
+        document.querySelector(".nav__brand-image").src = "img/logo/logo-colored-filled.png";
       }
     },
     {
