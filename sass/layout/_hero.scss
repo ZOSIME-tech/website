@@ -10,16 +10,26 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: max-content;
     grid-gap: 5rem;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+
 
     @include respond(phone) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, max-content);
       margin-top: 10rem;
+      transform: none;
 
       &__illustration {
         max-width: 80%;
         margin: auto;
       }
     }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
