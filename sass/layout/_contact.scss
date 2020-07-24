@@ -1,36 +1,28 @@
-.contact{
-
+.contact {
   @include setWidth;
 
-  &__logo{
-
+  &__logo {
     width: 10rem;
     height: 10rem;
 
-    @include respond(phone){
+    @include respond(phone) {
       width: 6rem;
       height: 6rem;
     }
-
   }
 
-  &__container{
-
+  &__container {
     display: flex;
     justify-content: space-around;
 
     a:link,
-    a:visited{
+    a:visited {
       text-decoration: none;
+      transition: all 0.3s;
     }
 
-
-    a:hover{
-       transform: translateY(-1rem) scale(1.05);
+    a:hover {
+      transform: translateY(-1rem) scale(1.05);
     }
-
-
   }
-
-
 }
