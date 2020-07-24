@@ -110,10 +110,17 @@
 }
 
 .custom {
-  background-image: linear-gradient(to right,
-      $color-white,
-      $color-primary-light,
-      $color-secondary-light);
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+  }
+
+  background-image: linear-gradient(
+    to right,
+    $color-white,
+    $color-primary-light,
+    $color-secondary-light
+  );
   margin-top: 4rem;
   padding: 1rem;
 
