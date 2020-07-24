@@ -63,7 +63,6 @@
     }
 
     &--special {
-      height: 50rem;
       background-color: $color-price-premium;
     }
   }
@@ -76,6 +75,14 @@
     transform: translateY(-50%);
     text-transform: uppercase;
     color: rgba($color-white, 0.1);
+
+    @include respond(tab-port) {
+      font-size: 15rem;
+    }
+
+    @include respond(tab-phone) {
+      font-size: 10rem;
+    }
   }
 
   &__details,
