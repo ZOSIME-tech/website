@@ -45,6 +45,15 @@
     transform: scale(0);
     transition: scale 0.3s;
 
+    @include respond(tab-port) {
+      width: 80%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      height: 100vh !important;
+    }
+
     &--pro {
       background-color: $color-price-base;
     }
@@ -54,7 +63,6 @@
     }
 
     &--special {
-      height: 50rem;
       background-color: $color-price-premium;
     }
   }
@@ -67,12 +75,28 @@
     transform: translateY(-50%);
     text-transform: uppercase;
     color: rgba($color-white, 0.1);
+
+    @include respond(tab-port) {
+      font-size: 15rem;
+    }
+
+    @include respond(tab-phone) {
+      font-size: 10rem;
+    }
   }
 
   &__details,
   &__terms {
-    margin: 3rem 5rem;
+    margin: 3rem 4rem;
     font-size: 1.3rem;
+
+    @include respond(tab-port) {
+      margin: 2rem 3rem;
+    }
+
+    @include respond(phone) {
+      margin: 1rem 1.5rem;
+    }
   }
 
   &__list {
