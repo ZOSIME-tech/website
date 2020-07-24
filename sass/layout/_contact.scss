@@ -19,7 +19,11 @@
     display: flex;
     justify-content: space-around;
 
-    
+    a:link,
+    a:visited{
+      text-decoration: none;
+    }
+
 
   }
 
