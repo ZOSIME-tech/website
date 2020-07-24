@@ -16,6 +16,7 @@
   }
 
   &__close {
+    color: $color-secondary-light;
     position: absolute;
     top: 2.5rem;
     right: 2.5rem;
@@ -26,10 +27,22 @@
 
   &__content {
     @include absCenter;
-    width: 75%;
+    width: 50%;
     height: 50rem;
     background-color: $color-white;
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+  }
+
+  &__details {
+    margin: 3rem 5rem;
+  }
+
+  &__terms {
+    margin: auto 5rem;
+  }
+
+  &__item {
+    margin: 1rem auto;
   }
 }
