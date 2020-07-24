@@ -29,7 +29,8 @@
     @include absCenter;
     width: 50%;
     height: 50rem;
-    background-color: $color-white;
+    background-color: $color-price-base;
+    color: $color-white;
     border-radius: 3px;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
   }
