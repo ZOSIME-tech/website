@@ -1,24 +1,23 @@
 .hero {
   @include setWidth;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
 
   &-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: max-content;
     grid-gap: 5rem;
-    margin-top: 50vh;
+    position: absolute;
+    width: 100%;
+    top: 50%;
     transform: translateY(-50%);
-
 
     @include respond(phone) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, max-content);
-      margin-top: 10rem;
       transform: none;
+      top: 25%;
     }
   }
 
