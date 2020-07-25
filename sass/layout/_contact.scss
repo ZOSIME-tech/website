@@ -25,4 +25,18 @@
       transform: translateY(-1rem) scale(1.05);
     }
   }
+  &__community {
+    display: flex;
+    justify-content: center;
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      transform: translateY(-1rem) scale(1.05);
+    }
+  }
 }
