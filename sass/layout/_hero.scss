@@ -3,6 +3,12 @@
   height: 100vh;
   position: relative;
 
+
+  @include respond(tab-port){
+    height: 80vh;
+  }
+
+
   &-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
