@@ -47,18 +47,6 @@
    * CHOICES:
    * phone, tab-port, tab-lan, desk
    */
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-    > img {
-      transform: rotate(-360deg);
-    }
-  }
-}
-
 *,
 *::before,
 *::after {
