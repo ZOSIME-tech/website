@@ -6,7 +6,7 @@
   100% {
     transform: rotate(360deg);
 
-    &>img {
+    & > img {
       transform: rotate(-360deg);
     }
   }
