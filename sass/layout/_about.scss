@@ -8,9 +8,8 @@
     // animation: rotate 5s infinite;
 
     @include respond(tiny) {
-      grid-gap: .5rem;
+      grid-gap: 0.5rem;
     }
-
 
     &--photo {
       width: 6rem;
@@ -86,10 +85,8 @@
 }
 
 .community {
-
   text-align: center;
   margin-top: 2rem;
-
 
   &--photo {
     width: 4rem;

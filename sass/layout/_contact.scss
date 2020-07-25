@@ -2,8 +2,8 @@
   @include setWidth;
 
   &__logo {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
 
     @include respond(phone) {
       width: 6rem;
@@ -17,7 +17,9 @@
 
     a:link,
     a:visited {
+      text-align: center;
       text-decoration: none;
+      color: $color-black;
       transition: all 0.3s;
     }
 
