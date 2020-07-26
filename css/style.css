@@ -177,6 +177,33 @@ body {
   color: transparent;
 }
 
+.small__circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 100px;
+  z-index: -9999;
+  position: absolute;
+  background-color: #2ab1db;
+  animation: rotate 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateY(-2rem);
+  }
+  25% {
+    transform: translateX(2rem);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateX(-2rem);
+  }
+}
+
 .btn,
 .btn btn:link,
 .btn btn:visited {
