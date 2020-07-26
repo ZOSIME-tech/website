@@ -1,11 +1,11 @@
 .hero {
   @include setWidth;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 
 
   @include respond(tab-port){
-    height: 80vh;
+    min-height: 80vh;
   }
 
 
@@ -23,7 +23,9 @@
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, max-content);
       transform: none;
-      top: 25%;
+      // top: 25%;
+      margin-top: 25%;
+      position: static;
     }
   }
 
