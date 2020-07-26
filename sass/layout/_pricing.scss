@@ -1,5 +1,6 @@
 .pricing {
   text-align: center;
+  position: relative;
   @include setWidth;
 
   &__container {
@@ -189,4 +190,49 @@
       color: $color-black;
     }
   }
+}
+
+
+
+.trans-circle{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100px;
+  z-index: -9999;
+
+  position: absolute;
+  
+  
+  background-color: transparent;
+  animation: rotate 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
+  display: none;
+
+
+  @include respond(tab-port){
+    display: inline-block;
+  }
+
+
+  &--1{
+    border: 3px solid $color-price-pro;
+    left: 0;
+    top: 50%;
+  }
+
+  &--2{
+      border: 3px solid $color-price-base;
+      right: 0;
+      top: 20%;
+  }
+
+  &--3{
+      border: 3px solid $color-price-premium;
+      right: 0;
+      top: 80%;
+  }
+
 }
