@@ -1,12 +1,14 @@
 .hero {
   @include setWidth;
-  min-height: 100vh;
-  position: relative;
+
+  margin-top: 12rem;
+
+  margin-bottom: 6rem;
+  // height: 100vh;
+  // display: flex;
+  // align-items: center;
 
 
-  @include respond(tab-port){
-    min-height: 80vh;
-  }
 
 
   &-inner {
@@ -14,18 +16,10 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: max-content;
     grid-gap: 5rem;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
 
     @include respond(phone) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, max-content);
-      transform: none;
-      // top: 25%;
-      margin-top: 25%;
-      position: static;
     }
   }
 

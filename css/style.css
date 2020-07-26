@@ -437,8 +437,8 @@ body {
 .hero {
   max-width: 110rem;
   margin: 0 auto;
-  min-height: 100vh;
-  position: relative;
+  margin-top: 12rem;
+  margin-bottom: 6rem;
 }
 
 @media only screen and (max-width: 75em) {
@@ -447,30 +447,17 @@ body {
   }
 }
 
-@media only screen and (max-width: 56.25em) {
-  .hero {
-    min-height: 80vh;
-  }
-}
-
 .hero-inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: max-content;
   grid-gap: 5rem;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 @media only screen and (max-width: 37.5em) {
   .hero-inner {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, max-content);
-    transform: none;
-    margin-top: 25%;
-    position: static;
   }
 }
 
@@ -1029,7 +1016,6 @@ body {
   max-width: 110rem;
   margin: 0 auto;
   text-align: center;
-  margin-top: 3rem;
 }
 
 @media only screen and (max-width: 75em) {
